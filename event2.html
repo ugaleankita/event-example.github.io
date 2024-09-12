@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span style="font-size: 30px;">Enter your Balance number :-</span><input type="text" id="no" style="font-size: 15px;"> <br><br>
+    <button onclick="DEPOSITE()" style="background-color: red; font-size: 20px;padding: 10px;">DEPOSITE</button>    
+    <button onclick="WITHDROL()" style="background-color: rgb(49, 228, 103);font-size: 20px;padding: 10px;">WITHDROL</button>    
+    <h2 id="result"></h2>
+
+
+    <script>
+        function DEPOSITE()
+        {
+            let a=prompt("Enter Deposite Amount :-")
+            let b= document.getElementById("no").value
+            let c=Number(a)+Number(b)
+            document.getElementById("result").innerHTML="YOUR CURRENT BALANCE IS :"+c
+        }
+        
+
+        function WITHDROL()
+        {
+            let a=prompt("Enter Withdrol Amount :-")
+            // let a=prompt("Enter Deposite Amount :-")
+            let b= document.getElementById("no").value
+            let c=Number(a)-Number(b)
+            document.getElementById("result").innerHTML="YOUR CURRENT BALANCE IS :"+c
+        }
+
+        
+
+ 
+    </script>
+</body>
+</html>
